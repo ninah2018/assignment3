@@ -1,0 +1,4 @@
+1.  without execstack and  -fno-stack-protector, the stack can't execute code or be accessed, so there is no error 
+2. with -fno-stack-protector, we can access the stack, but when try to run the problem, it can not execute, so there will be segment fault
+3. with executable stack only, we can't access the stack, so there will failed
+4. we success run the attach shell code

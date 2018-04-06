@@ -1,0 +1,41 @@
+Script started on Fri 06 Apr 2018 10:41:57 AM CDT
+]0;nina2018@js-17-137: ~/assignment3nina2018@js-17-137:~/assignment3$ ./ar[Kttack 20
+
+Using address as guess for beginning of attack buffer: 0xffffdd20
+
+Length of Input String:19
+
+
+Value of Test:ffffb648
+Value of filename[0]:ffffb240
+
+You are going to need a buffer a little larger than:1032
+
+]0;nina2018@js-17-137: ~/assignment3nina2018@js-17-137:~/assignment3$ ./attack 1040 2000
+
+Using address as guess for beginning of attack buffer: 0xffffd540
+
+Length of Input String:1038
+
+
+Value of Test:ffffb248
+Value of filename[0]:ffffae40
+
+You are going to need a buffer a little larger than:1032
+
+]0;nina2018@js-17-137: ~/assignment3nina2018@js-17-137:~/assignment3$ ./attack 1040 2000[K[K[K[K[K 1038
+
+Using address as guess for beginning of attack buffer: 0xffffd902
+
+Length of Input String:1038
+
+
+Value of Test:ffffb248
+Value of filename[0]:ffffae40
+
+You are going to need a buffer a little larger than:1032
+
+]0;nina2018@js-17-137: ~/assignment3nina2018@js-17-137:~/assignment3$ exit
+exit
+
+Script done on Fri 06 Apr 2018 10:43:05 AM CDT

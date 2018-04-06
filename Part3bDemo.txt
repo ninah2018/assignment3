@@ -1,0 +1,77 @@
+Script started on Fri 06 Apr 2018 10:36:54 AM CDT
+]0;nina2018@js-17-137: ~/assignment3nina2018@js-17-137:~/assignment3$ gcc -o part3b poa[K[Kart3b.ciart3b.c[1Part3b.c[1Part3b.cPart3b.c
+Part3b.c: In function ‘dumb’:
+Part3b.c:34:11: warning: assignment makes integer from pointer without a cast [enabled by default]
+      *hold=filename;
+           ^
+Part3b.c: In function ‘main’:
+Part3b.c:52:7: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘size_t’ [-Wformat=]
+       printf("\\Length of Input String:%d\\", strlen(string));
+       ^
+]0;nina2018@js-17-137: ~/assignment3nina2018@js-17-137:~/assignment3$ ./part3b
+
+
+Error: No Command Line arg for vuln was given
+
+
+Value of Test:7fffffffb238
+Value of filename[0]:7fffffffb240
+The attack buffer is going to need to be a little bit bigger than:ffff800000004dc0
+]0;nina2018@js-17-137: ~/assignment3nina2018@js-17-137:~/assignment3$ ./part3bgcc -o part3b Part3b.c[1@ [1P[C[C[C[C[C[1@ [1@-[1@f[1@n[1@o[1@-[1@s[1@t[1@a[1@c[1@k[1@-[1@p[1@r[1@o[1@t[1@e[1@c[1@t[1@o[1@r
+Part3b.c: In function ‘dumb’:
+Part3b.c:34:11: warning: assignment makes integer from pointer without a cast [enabled by default]
+      *hold=filename;
+           ^
+Part3b.c: In function ‘main’:
+Part3b.c:52:7: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘size_t’ [-Wformat=]
+       printf("\\Length of Input String:%d\\", strlen(string));
+       ^
+]0;nina2018@js-17-137: ~/assignment3nina2018@js-17-137:~/assignment3$ ./part3b
+
+
+Error: No Command Line arg for vuln was given
+
+
+Value of Test:7fffffffb658
+Value of filename[0]:7fffffffb250
+The attack buffer is going to need to be a little bit bigger than:2b50
+Segmentation fault (core dumped)
+]0;nina2018@js-17-137: ~/assignment3nina2018@js-17-137:~/assignment3$ ./part3bgcc -fno-stack-protector -o part3b Part3b.c[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@i[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[C[1@ [1@-[1@z[C[1@ [1@e[1@x[1@e[1@c[1@s[1@t[1@a[1@c[1@k
+Part3b.c: In function ‘dumb’:
+Part3b.c:34:11: warning: assignment makes integer from pointer without a cast [enabled by default]
+      *hold=filename;
+           ^
+Part3b.c: In function ‘main’:
+Part3b.c:52:7: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘size_t’ [-Wformat=]
+       printf("\\Length of Input String:%d\\", strlen(string));
+       ^
+]0;nina2018@js-17-137: ~/assignment3nina2018@js-17-137:~/assignment3$ ./part3b
+
+
+Error: No Command Line arg for vuln was given
+
+
+Value of Test:7fffffffb238
+Value of filename[0]:7fffffffb240
+The attack buffer is going to need to be a little bit bigger than:ffff800000004dc0
+]0;nina2018@js-17-137: ~/assignment3nina2018@js-17-137:~/assignment3$ gcc -z execstack -fno-stack-protector -o part3b -[KPart3b.c 
+Part3b.c: In function ‘dumb’:
+Part3b.c:34:11: warning: assignment makes integer from pointer without a cast [enabled by default]
+      *hold=filename;
+           ^
+Part3b.c: In function ‘main’:
+Part3b.c:52:7: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘size_t’ [-Wformat=]
+       printf("\\Length of Input String:%d\\", strlen(string));
+       ^
+]0;nina2018@js-17-137: ~/assignment3nina2018@js-17-137:~/assignment3$ ./part3b
+
+
+Error: No Command Line arg for vuln was given
+
+
+Value of Test:7fffffffb658
+Value of filename[0]:7fffffffb250
+The attack buffer is going to need to be a little bit bigger than:2b50
+$ exit
+]0;nina2018@js-17-137: ~/assignment3nina2018@js-17-137:~/assignment3$ exit
+Script done on Fri 06 Apr 2018 10:41:21 AM CDT

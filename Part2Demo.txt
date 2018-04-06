@@ -1,0 +1,65 @@
+Script started on Fri 06 Apr 2018 10:33:23 AM CDT
+]0;nina2018@js-17-137: ~/assignment3nina2018@js-17-137:~/assignment3$ as part2.s -o part2.o && ld part2.o -o part2 && ./part2
+$ exit
+]0;nina2018@js-17-137: ~/assignment3nina2018@js-17-137:~/assignment3$ objdump -d part2
+
+part2:     file format elf64-x86-64
+
+
+Disassembly of section .text:
+
+0000000000400078 <_start>:
+  400078:	48 31 ff             	xor    %rdi,%rdi
+  40007b:	57                   	push   %rdi
+  40007c:	57                   	push   %rdi
+  40007d:	5e                   	pop    %rsi
+  40007e:	5a                   	pop    %rdx
+  40007f:	48 bf 6a 2f 62 69 6e 	movabs $0x68732f6e69622f6a,%rdi
+  400086:	2f 73 68 
+  400089:	48 c1 ef 08          	shr    $0x8,%rdi
+  40008d:	57                   	push   %rdi
+  40008e:	54                   	push   %rsp
+  40008f:	5f                   	pop    %rdi
+  400090:	6a 3b                	pushq  $0x3b
+  400092:	58                   	pop    %rax
+  400093:	0f 05                	syscall 
+]0;nina2018@js-17-137: ~/assignment3nina2018@js-17-137:~/assignment3$ gdb part2
+GNU gdb (Ubuntu 7.7.1-0ubuntu5~14.04.3) 7.7.1
+Copyright (C) 2014 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>.
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from part2...(no debugging symbols found)...done.
+(gdb) disassemble _start 
+Dump of assembler code for function _start:
+   0x0000000000400078 <+0>:	xor    %rdi,%rdi
+   0x000000000040007b <+3>:	push   %rdi
+   0x000000000040007c <+4>:	push   %rdi
+   0x000000000040007d <+5>:	pop    %rsi
+   0x000000000040007e <+6>:	pop    %rdx
+   0x000000000040007f <+7>:	movabs $0x68732f6e69622f6a,%rdi
+   0x0000000000400089 <+17>:	shr    $0x8,%rdi
+   0x000000000040008d <+21>:	push   %rdi
+   0x000000000040008e <+22>:	push   %rsp
+   0x000000000040008f <+23>:	pop    %rdi
+   0x0000000000400090 <+24>:	pushq  $0x3b
+   0x0000000000400092 <+26>:	pop    %rax
+   0x0000000000400093 <+27>:	syscall 
+End of assembler dump.
+(gdb) x /100x 0x0000000000400078[C[C[C[C[C[C[1P[1P[1P[1@3[1@0
+0x400078 <_start>:	0x57ff3148	0x485a5e57	0x622f6abf	0x732f6e69
+0x400088 <_start+16>:	0xefc14868	0x5f545708	0x0f583b6a	Cannot access memory at address 0x400095
+(gdb) quit
+]0;nina2018@js-17-137: ~/assignment3nina2018@js-17-137:~/assignment3$ exit
+exit
+
+Script done on Fri 06 Apr 2018 10:35:53 AM CDT

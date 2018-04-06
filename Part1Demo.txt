@@ -1,0 +1,7 @@
+Script started on Thu 29 Mar 2018 09:48:11 AM CDT
+]0;nina2018@js-17-55: ~/assignment3nina2018@js-17-55:~/assignment3$ as --32 part2.s -o part2.o && ld -m elf_i386 part2.o -o part2 && ./part2[K1[C[C[C[C[1P[1@1[C[C[1P[1@1[1P[1@1[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[1@1
+$ exit
+]0;nina2018@js-17-55: ~/assignment3nina2018@js-17-55:~/assignment3$ exit
+exit
+
+Script done on Thu 29 Mar 2018 09:49:02 AM CDT
